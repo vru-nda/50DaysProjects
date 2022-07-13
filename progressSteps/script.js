@@ -5,6 +5,7 @@ const circles = document.querySelectorAll('.circle');
 
 let current = 1;
 
+//go to next circle till last one
 next.addEventListener('click', () => {
   current++;
   if (current > circles.length) {
@@ -13,6 +14,7 @@ next.addEventListener('click', () => {
   update();
 });
 
+//come back to previos circle till first one
 prev.addEventListener('click', () => {
   current--;
   if (current < 1) {
