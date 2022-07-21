@@ -3,6 +3,8 @@ const prev = document.querySelector('#prev');
 const next = document.querySelector('#next');
 const circles = document.querySelectorAll('.circle');
 
+console.log(progress, prev, next, circles);
+
 let current = 1;
 
 //go to next circle till last one
@@ -24,6 +26,7 @@ prev.addEventListener('click', () => {
   update();
 });
 
+// toggle active class on circle
 const update = () => {
   circles.forEach((circle, index) => {
     if (index < current) {
@@ -33,5 +36,19 @@ const update = () => {
     }
   });
 
-  const actives = document.querySelectorAll(".active");
+  const actives = document.querySelectorAll('.active');
+
+  // calculate the width of the progress bar
+  progress.style.width =
+    ((actives.length - 1) / (circles.length - 1)) * 100 + '%';
+
+  // disable buttons accordingly
+  if (current === 1) {
+    prev.disabled = true;
+  } else if (current === circles.length) {
+    next.disabled = true;
+  } else {
+    next.disabled = false;
+    prev.disabled = false;
+  }
 };

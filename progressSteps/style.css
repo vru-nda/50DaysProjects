@@ -54,7 +54,7 @@ body {
   transform: translateY(-50%);
   width: 0%;
   z-index: -1;
-  transition: 04s ease;
+  transition: 0.4s ease;
 }
 
 .circle {
