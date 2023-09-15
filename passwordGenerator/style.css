@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3b3b98;
+  font-family: 'Muli', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  background-color: #2a2a72;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 30px;
+  height: 420px;
+  width: 400px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.result-container {
+  padding: 10px;
+  background-color: #1e1e59;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+  overflow-y: scroll;
+}
+
+.btn {
+  border: none;
+  background-color: #3b3b98;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+}
+
+.fas.fa-clipboard {
+  font-size: 24px;
+  padding: 4px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 30px 0;
+}
+
+.settings input {
+  float: right;
+}
+
+.settings input:focus {
+  outline: none;
+}
+
+.btn-large {
+  padding: 10px 5px;
+}

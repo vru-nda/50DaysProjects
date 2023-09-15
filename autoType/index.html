@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Text effect</title>
+  </head>
+  <body>
+    <h1 id="text"></h1>
+
+    <div>
+      <textarea
+        name="text-input"
+        id="text-input"
+        cols="30"
+        rows="10"
+        placeholder="Enter your text here"
+      ></textarea>
+      <button type="submit" id="submit-btn">Submit</button>
+
+      <section>
+        <label for="speed">Speed:</label>
+        <input
+          type="number"
+          name="speed"
+          value="1"
+          id="speed"
+          max="5"
+          min="1"
+        />
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
